@@ -2,9 +2,9 @@
 ; "/Users/martinfranzner/Documents/PUC_COMPUTACAO/5oSemestre/ProgramacaoFuncional/codes/pajekLisp.txt"
 ; para chamar
 ;chamada do grafo
-; (setq grafo (grafoPronto "/Users/martinfranzner/Documents/PUC_COMPUTACAO/5oSemestre/ProgramacaoFuncional/codes/pajekLisp.txt"))
-;(setq grafo1 (grafoPronto "/Users/martinfranzner/Documents/PUC_COMPUTACAO/5oSemestre/ProgramacaoFuncional/PajekActor.txt"))
-;(setq grafo (grafoPronto "/Users/martinfranzner/Documents/PUC_COMPUTACAO/5oSemestre/ProgramacaoFuncional/codes/pajekGrafoGrande.txt"))
+; (setq grafo (grafoPronto "pajekLisp.txt")) path para o arquivo pajek
+;(printtabela grafo)
+
 
 (defun get-file (filename)
   (with-open-file (stream filename)
