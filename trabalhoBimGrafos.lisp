@@ -36,10 +36,10 @@
 
 (defun preparaGrafo (lista)
   (let ( (counter 0) (listaComNomes) )
-    (setq fezes (list (cadr (car lista))))
+    (setq feze (list (cadr (car lista))))
     (setq lista (cdr lista))
     (dolist (x lista)
-      (if (< counter (car fezes))
+      (if (< counter (car feze))
         (progn
           (setq listaComNomes (append listaComNomes (list x)))
           (setq lista ( cdr lista))
@@ -48,7 +48,7 @@
       )
     )
     (setq lista (cdr lista))
-    (list (car fezes) listaComNomes lista)
+    (list (car feze) listaComNomes lista)
   )
 )
 
